@@ -134,6 +134,7 @@ header {
 .nav-links {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 .nav-links a {
@@ -221,7 +222,8 @@ header {
 /* Services Preview */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    /* Force 2 columns */
     gap: 30px;
     margin-top: 50px;
 }
@@ -478,7 +480,8 @@ iframe {
         font-size: 1.5rem;
     }
 
-    .about-grid {
+    .about-grid,
+    .services-grid {
         grid-template-columns: 1fr;
     }
 
