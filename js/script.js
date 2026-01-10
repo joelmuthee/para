@@ -35,7 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '1';
                 entry.target.style.transform = 'translateY(0)';
-                observer.unobserve(entry.target);
+            } else {
+                entry.target.style.opacity = '0';
+                entry.target.style.transform = 'translateY(40px)';
             }
         });
     }, { threshold: 0.1 });
