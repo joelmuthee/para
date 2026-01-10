@@ -27,40 +27,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <style>
-        .contact-form {
-            background: var(--dark-surface);
-            padding: 40px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-        }
 
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            color: var(--white);
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            background: var(--dark-bg);
-            border: 1px solid var(--border-color);
-            color: var(--text-main);
-            border-radius: 4px;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--primary);
-        }
-    </style>
 </head>
 
 <body>
@@ -97,73 +64,150 @@
 
     <section class="section-padding">
         <div class="container">
-            <div class="footer-grid">
-                <!-- Info -->
-                <div>
-                    <h2>Get In Touch</h2>
-                    <p style="color: var(--text-muted); margin-bottom: 30px;">
-                        Have questions or want to book a specific slot? Reach out to us directly via WhatsApp or visit
-                        our executive lounge using the map below.
+            <div class="section-title text-center">
+                <h2>Our Locations</h2>
+                <p style="color: var(--text-muted); margin-bottom: 60px;">Visit our executive lounges at two convenient
+                    locations in Ngong</p>
+            </div>
+
+            <!-- Location 1: Ngong Town (Total) -->
+            <div class="about-grid" style="align-items: center; margin-bottom: 80px;">
+                <!-- Left Column: Contact Info -->
+                <div style="text-align: center;">
+                    <h2
+                        style="color: var(--primary); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">
+                        NGONG TOWN BRANCH</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 30px; font-weight: 500;">
+                        Located at Total Energis Service Station
                     </p>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h3>Location</h3>
-                                <p>Ngong Town</p>
-                            </div>
+
+                    <div class="contact-info" style="display: flex; flex-direction: column; gap: 20px;">
+
+                        <!-- Address -->
+                        <div class="contact-item"
+                            style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+                            <h3
+                                style="color: var(--white); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">
+                                <i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 5px;"></i>
+                                ADDRESS
+                            </h3>
+                            <p style="color: var(--text-muted);">
+                                Total Energies Station<br>
+                                Ngong Town Center
+                            </p>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h3>Phone</h3>
-                                <p><a href="tel:0720615606">0720615606</a></p>
-                            </div>
+
+                        <!-- Phone -->
+                        <div class="contact-item"
+                            style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+                            <h3
+                                style="color: var(--white); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">
+                                <i class="fas fa-phone" style="color: var(--primary); margin-right: 5px;"></i> PHONE
+                            </h3>
+                            <p>
+                                <a href="tel:0720615606"
+                                    style="color: var(--text-muted); font-size: 1.1rem; text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.3); text-underline-offset: 4px;">0720
+                                    615 606</a>
+                            </p>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h3>Email</h3>
-                                <p><a href="mailto:info@thepara.com">info@thepara.com</a></p>
-                            </div>
+
+                        <!-- Hours -->
+                        <div class="contact-item"
+                            style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+                            <h3
+                                style="color: var(--white); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">
+                                <i class="fas fa-clock" style="color: var(--primary); margin-right: 5px;"></i> BUSINESS
+                                HOURS
+                            </h3>
+                            <p style="color: var(--text-muted);">
+                                Mon - Fri: 8am - 8pm<br>
+                                Sat: 9am - 9pm<br>
+                                Sun: 10am - 6pm
+                            </p>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <h3>Opening Hours</h3>
-                                <p>Mon - Fri: 8am - 8pm<br>Sat: 9am - 9pm<br>Sun: 10am - 6pm</p>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
 
-                <!-- Form -->
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <label>Name</label>
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Message</label>
-                            <textarea rows="5" placeholder="How can we help?" required></textarea>
-                        </div>
-                        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
-                    </form>
-                </div>
-            </div>
-
-            <!-- Map - Removed Filter -->
-            <div style="margin-top: 60px;">
+                <!-- Right Column: Map -->
                 <div>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.10977233866!2d36.6566!3d-1.3618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f0599a0b0b0b0%3A0x0!2sNgong%20Town!5e0!3m2!1sen!2ske!4v1684940000000!5m2!1sen!2ske"
-                        width="100%" height="450" style="border:0; border-radius: 8px;" allowfullscreen=""
+                        width="100%" height="400"
+                        style="border:0; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);" allowfullscreen=""
                         loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="service-divider" style="margin: 60px auto;"></div>
+
+            <!-- Location 2: Astrol Station -->
+            <div class="about-grid" style="align-items: center;">
+                <!-- Left Column: Map -->
+                <div>
+                    <iframe width="100%" height="400"
+                        style="border:0; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.5);" loading="lazy"
+                        allowfullscreen
+                        src="https://maps.google.com/maps?q=Astrol+Petrol+Station+Ngong&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                    </iframe>
+                </div>
+
+                <!-- Right Column: Contact Info -->
+                <div style="text-align: center;">
+                    <h2
+                        style="color: var(--primary); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">
+                        ASTROL BRANCH</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 30px; font-weight: 500;">
+                        Located at Astrol Petrol Station
+                    </p>
+
+                    <div class="contact-info" style="display: flex; flex-direction: column; gap: 20px;">
+
+                        <!-- Address -->
+                        <div class="contact-item"
+                            style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+                            <h3
+                                style="color: var(--white); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">
+                                <i class="fas fa-map-marker-alt" style="color: var(--primary); margin-right: 5px;"></i>
+                                ADDRESS
+                            </h3>
+                            <p style="color: var(--text-muted);">
+                                Astrol Petrol Station<br>
+                                Near Ngong Town
+                            </p>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="contact-item"
+                            style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+                            <h3
+                                style="color: var(--white); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">
+                                <i class="fas fa-phone" style="color: var(--primary); margin-right: 5px;"></i> PHONE
+                            </h3>
+                            <p>
+                                <a href="tel:0720615606"
+                                    style="color: var(--text-muted); font-size: 1.1rem; text-decoration: underline; text-decoration-color: rgba(255, 255, 255, 0.3); text-underline-offset: 4px;">0720
+                                    615 606</a>
+                            </p>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="contact-item"
+                            style="display: flex; flex-direction: column; align-items: center; gap: 5px;">
+                            <h3
+                                style="color: var(--white); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px;">
+                                <i class="fas fa-clock" style="color: var(--primary); margin-right: 5px;"></i> BUSINESS
+                                HOURS
+                            </h3>
+                            <p style="color: var(--text-muted);">
+                                Mon - Fri: 8am - 8pm<br>
+                                Sat: 9am - 9pm<br>
+                                Sun: 10am - 6pm
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -293,7 +337,7 @@
                         <li><a href="massage.html">Body Massage</a></li>
                         <li><a href="nails.html">Manicure & Pedicure</a></li>
                         <li><a href="facials.html">Facials</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.html">Visit Us</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
