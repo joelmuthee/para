@@ -600,6 +600,10 @@ iframe {
         grid-template-columns: 1fr;
     }
 
+    .mobile-reorder>div:nth-child(2) {
+        order: -1;
+    }
+
     /* Force images to top on mobile for all about-grid sections */
     .about-grid {
         display: flex;
