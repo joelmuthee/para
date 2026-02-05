@@ -35,12 +35,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '1';
                 entry.target.style.transform = 'translateY(0)';
-            } else {
-                entry.target.style.opacity = '0';
-                entry.target.style.transform = 'translateY(40px)';
+                observer.unobserve(entry.target); // Stop observing once revealed
             }
         });
-    }, { threshold: 0.05, rootMargin: '0px 0px -50px 0px' });
+    }, { threshold: 0.1, rootMargin: '0px 0px 0px 0px' });
 
     document.querySelectorAll('.service-card, .section-title, .review-card, .about-content, .about-img, .feature-card, .footer-col, .footer-grid > div, .contact-grid > div, .about-grid > div').forEach(el => {
         el.style.opacity = '0';
