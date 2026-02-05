@@ -1,23 +1,22 @@
 :root {
-    --primary: #C5A059;
-    /* Richer Gold */
-    --primary-hover: #D4B06A;
-    --dark-bg: #F9F9F9;
-    /* Now Light Background */
-    --dark-surface: #FFFFFF;
-    /* Now White Surface */
-    --text-main: #2C2C2C;
-    /* Dark Charcoal Text */
-    --text-muted: #666666;
-    /* Medium Gray */
-    --white: #FFFFFF;
-    --black: #121212;
-    --border-color: #E5E5E5;
+    --primary: #D4AF37;
+    /* Metallic Gold */
+    --primary-hover: #E5C158;
+    --dark-bg: #0A0A0A;
+    /* Deeper Rich Black */
+    --dark-surface: rgba(255, 255, 255, 0.03);
+    /* Glassy Surface */
+    --text-main: #F4F4F4;
+    --text-muted: #B0B0B0;
+    /* Lighter Gray for better readability */
+    --white: #ffffff;
+    --border-color: rgba(255, 255, 255, 0.08);
     --font-heading: 'Outfit', sans-serif;
     --font-body: 'Inter', sans-serif;
-    --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    /* Smoother Luxury Feel */
-    --shadow-card: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
+    --transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+    /* Elegant Easing */
+    --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
 ::selection {
@@ -57,9 +56,8 @@ h4,
 h5,
 h6 {
     font-family: var(--font-heading);
-    color: var(--text-main);
+    color: var(--white);
     margin-bottom: 1rem;
-    letter-spacing: 0.5px;
 }
 
 a {
@@ -132,7 +130,6 @@ header {
     width: 100%;
     z-index: 1000;
     background: rgba(18, 18, 18, 0.95);
-    /* Keep Dark Nav */
     backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     padding: 15px 0;
@@ -157,8 +154,7 @@ header {
 }
 
 .nav-links a {
-    color: var(--white);
-    /* White text on Dark Header */
+    color: var(--text-main);
     font-weight: 500;
     font-size: 0.85rem;
     text-transform: uppercase;
@@ -213,9 +209,8 @@ header {
     font-size: 1.2rem;
     max-width: 600px;
     margin: 0 auto 30px;
-    color: var(--white);
-    /* Force White on Hero */
-    opacity: 0.9;
+    color: var(--text-muted);
+    opacity: 0;
     animation: fadeInUp 1s ease forwards;
     animation-delay: 0.6s;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
@@ -302,14 +297,15 @@ header {
 
 .service-card {
     background: var(--dark-surface);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     padding: 0;
-    border-radius: 8px;
-    /* Softer Radius */
+    border-radius: 12px;
     overflow: hidden;
     position: relative;
     /* transition: var(--transition); */
-    border: none;
-    box-shadow: var(--shadow-card);
+    border: var(--glass-border);
+    box-shadow: var(--glass-shadow);
 }
 
 .service-card:hover {
@@ -337,9 +333,8 @@ header {
 }
 
 .service-info h3 {
-    color: var(--text-main);
+    color: var(--white);
     font-size: 1.4rem;
-    font-weight: 600;
 }
 
 .service-info p {
@@ -450,10 +445,9 @@ header {
 
 /* Footer */
 footer {
-    background: #121212;
-    /* Explicit Dark Footer */
-    padding: 80px 0 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background: #000;
+    padding: 60px 0 20px;
+    border-top: 1px solid var(--border-color);
 }
 
 .footer-grid {
@@ -470,8 +464,7 @@ footer {
 
 .footer-info p,
 .footer-links li a {
-    color: #a0a0a0;
-    /* Light Gray for Dark Background */
+    color: var(--text-muted);
     margin-bottom: 10px;
     display: block;
 }
@@ -548,10 +541,10 @@ iframe {
 
 .feature-card {
     background: var(--dark-surface);
-    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
     overflow: hidden;
-    border: none;
-    box-shadow: var(--shadow-card);
+    border: var(--glass-border);
     transition: var(--transition);
     height: 100%;
 }
@@ -585,7 +578,7 @@ iframe {
 .feature-info h3 {
     font-size: 1.2rem;
     margin-bottom: 15px;
-    color: var(--text-main);
+    color: var(--white);
 }
 
 .feature-info p {
@@ -748,12 +741,14 @@ iframe {
 }
 
 .modal-content {
-    background: var(--dark-surface);
-    padding: 30px;
+    background: #1a1a1a;
+    background: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(15px);
+    padding: 40px;
     border-radius: 16px;
-    border: none;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
-    /* Soft Luxury Shadow */
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    /* Subtle Gold Border */
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
     max-width: 450px;
     width: 90%;
     text-align: center;
@@ -779,16 +774,14 @@ iframe {
 }
 
 .modal-close:hover {
-    color: var(--text-main);
+    color: var(--white);
 }
 
 .modal-title {
-    font-size: 1.6rem;
-    color: var(--text-main);
-    /* Dark Text */
-    margin-bottom: 25px;
+    font-size: 1.8rem;
+    color: var(--white);
+    margin-bottom: 20px;
     font-family: var(--font-heading);
-    font-weight: 600;
 }
 
 .branch-btn {
@@ -798,27 +791,23 @@ iframe {
     width: 100%;
     padding: 15px 20px;
     margin-bottom: 15px;
-    background: #F7F7F7;
-    /* Light Gray Pill */
-    border: 1px solid #E5E5E5;
-    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: left;
 }
 
 .branch-btn:hover {
-    background: #FFF;
+    background: rgba(227, 212, 107, 0.1);
     border-color: var(--primary);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .branch-info h4 {
-    color: var(--text-main);
-    /* Dark Text */
+    color: var(--white);
     font-size: 1.1rem;
-    margin-bottom: 4px;
-    font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .branch-info p {
@@ -842,10 +831,10 @@ iframe {
 /* Signature Cuts Text Cards */
 .signature-cut-card {
     background: var(--dark-surface);
-    padding: 35px;
-    border-radius: 8px;
-    border: none;
-    box-shadow: var(--shadow-card);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 12px;
+    border: var(--glass-border);
     transition: var(--transition);
     height: 100%;
     display: flex;
