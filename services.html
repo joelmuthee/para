@@ -1,121 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Explore our range of premium grooming services: Barbershop, Massage, Facials, and Nails.">
+        content="Our Services - Joel's Executive Salon & Barbers. Haircuts, Beard Trims, Manicures, Pedicures, and Spa Treatments.">
 
-    <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://thepara.com/services.html">
-    <meta property="og:title" content="The Para | Our Services">
-    <meta property="og:description"
-        content="Explore our range of premium grooming services: Barbershop, Massage, Facials, and Nails.">
-    <meta property="og:image" content="https://thepara.com/images/logo.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="300">
+    <meta property="og:url" content="https://joelsspa.com/services.html">
+    <meta property="og:title" content="Services | Joel's Executive Salon & Barbers">
+    <meta property="og:description" content="Explore our premium grooming menu.">
+    <meta property="og:image" content="https://joelsspa.com/images/logo.png">
 
-    <title>The Para | Our Services</title>
-    <p style="color: var(--text-muted); margin-bottom: 40px;">What our executive clients say about us</p>
+    <title>Our Services | Joel's Executive Salon & Barbers</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Joel's Executive Salon & Barbers Logo">
+            </a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="barbershop.html">Barbershop</a>
+                <a href="salon.html">Salon</a>
+                <a href="nails.html">Nails Spa</a>
+                <a href="eyebrows.html">Eyebrows</a>
+
+                <a href="contact.html">Contact</a>
+                <a href="https://wa.me/254720615606" class="btn" target="_blank"><i class="fab fa-whatsapp"></i> Book
+                    Appointment</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero hero-pattern" style="height: 50vh; min-height: 400px;">
+        <div class="container hero-content">
+            <h1>Our Services</h1>
+            <p>A comprehensive menu of executive grooming treatments.</p>
+        </div>
     </div>
 
-    <div class="reviews-slider">
-        <!-- 10 Imaginary Reviews -->
-        <div class="review-card">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p class="review-text">"The best barber experience in Ngong Town. The attention to detail is
-                unmatched."</p>
-            <div class="reviewer">
-                <div class="reviewer-avatar">JD</div>
-                <span>James D.</span>
+    <div class="service-divider"></div>
+    <section class="section-padding">
+        <div class="container">
+            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+                <!-- Barbershop -->
+                <a href="barbershop.html" class="service-card" style="text-decoration: none; color: inherit;">
+                    <div class="border-beam"></div>
+                    <div class="service-img">
+                        <img src="images/service-barber.png" alt="Barbershop Services" loading="lazy">
+                    </div>
+                    <div class="service-info">
+                        <h3>Barbershop</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 15px;">Executive cuts, beard trimming, and
+                            hot towel shaves.</p>
+                        <span class="btn-text">View Menu <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Salon -->
+                <a href="salon.html" class="service-card" style="text-decoration: none; color: inherit;">
+                    <div class="border-beam"></div>
+                    <div class="service-img">
+                        <img src="images/style-salon-1.png" alt="Salon Services" loading="lazy">
+                    </div>
+                    <div class="service-info">
+                        <h3>Executive Salon</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 15px;">Premium haircare, styling, treatments,
+                            and coloring.</p>
+                        <span class="btn-text">View Menu <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Nails -->
+                <a href="nails.html" class="service-card" style="text-decoration: none; color: inherit;">
+                    <div class="border-beam"></div>
+                    <div class="service-img">
+                        <img src="images/service-nails.png" alt="Nail Services" loading="lazy">
+                    </div>
+                    <div class="service-info">
+                        <h3>Nails Spa</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 15px;">Manicures, pedicures, and nail
+                            artistry.</p>
+                        <span class="btn-text">View Menu <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Eyebrows -->
+                <a href="eyebrows.html" class="service-card" style="text-decoration: none; color: inherit;">
+                    <div class="border-beam"></div>
+                    <div class="service-img">
+                        <img src="images/service-eyebrows.png" alt="Eyebrow Services" loading="lazy">
+                    </div>
+                    <div class="service-info">
+                        <h3>Eyebrows & Face</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 15px;">Microblading, tinting, and facial
+                            treatments.</p>
+                        <span class="btn-text">View Menu <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
             </div>
         </div>
-        <div class="review-card">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p class="review-text">"Incredible service! The spa treatments are so relaxing. Highly recommended."
-            </p>
-            <div class="reviewer">
-                <div class="reviewer-avatar">MK</div>
-                <span>Mary K.</span>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section-padding reviews-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Testimonials</h2>
+                <p style="color: var(--text-muted); margin-bottom: 40px;">What our executive clients say about us</p>
+            </div>
+
+            <div class="reviews-slider">
+                <!-- 10 Imaginary Reviews -->
+                <div class="review-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"The best barber experience in Nairobi. The attention to detail is
+                        unmatched."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">JD</div>
+                        <span>James D.</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"Incredible service! The spa treatments are so relaxing. Highly recommended."
+                    </p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">MK</div>
+                        <span>Mary K.</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"Professionalism at its peak. Joel's team knows exactly what they are doing."
+                    </p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">PO</div>
+                        <span>Peter O.</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"Love the ambiance. Dark, moody, and very executive. My go-to spot."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">SW</div>
+                        <span>Sarah W.</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"Excellent fades. The barbers are true artists."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">DN</div>
+                        <span>David N.</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"The nails service is top notch. Very clean and hygienic."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">AM</div>
+                        <span>Alice M.</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"Great location near Parliament. Very convenient for quick grooming."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">TK</div>
+                        <span>Tom K.</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"Five stars all the way. The hot towel shave is a must-try."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">RK</div>
+                        <span>Robert K.</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"Finally a place that understands black hair and skin perfectly."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">GN</div>
+                        <span>Grace N.</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"Booking is easy and they are always on time. Respect."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">BJ</div>
+                        <span>Brian J.</span>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="review-card">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p class="review-text">"Professionalism at its peak. Joel's team knows exactly what they are doing."
-            </p>
-            <div class="reviewer">
-                <div class="reviewer-avatar">PO</div>
-                <span>Peter O.</span>
-            </div>
-        </div>
-        <div class="review-card">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p class="review-text">"Love the ambiance. Dark, moody, and very executive. My go-to spot."</p>
-            <div class="reviewer">
-                <div class="reviewer-avatar">SW</div>
-                <span>Sarah W.</span>
-            </div>
-        </div>
-        <div class="review-card">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p class="review-text">"Excellent fades. The barbers are true artists."</p>
-            <div class="reviewer">
-                <div class="reviewer-avatar">DN</div>
-                <span>David N.</span>
-            </div>
-        </div>
-        <div class="review-card">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p class="review-text">"The nails service is top notch. Very clean and hygienic."</p>
-            <div class="reviewer">
-                <div class="reviewer-avatar">AM</div>
-                <span>Alice M.</span>
-            </div>
-        </div>
-        <div class="review-card">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p class="review-text">"Great location near Parliament. Very convenient for quick grooming."</p>
-            <div class="reviewer">
-                <div class="reviewer-avatar">TK</div>
-                <span>Tom K.</span>
-            </div>
-        </div>
-        <div class="review-card">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p class="review-text">"Five stars all the way. The hot towel shave is a must-try."</p>
-            <div class="reviewer">
-                <div class="reviewer-avatar">RK</div>
-                <span>Robert K.</span>
-            </div>
-        </div>
-        <div class="review-card">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p class="review-text">"Finally a place that understands black hair and skin perfectly."</p>
-            <div class="reviewer">
-                <div class="reviewer-avatar">GN</div>
-                <span>Grace N.</span>
-            </div>
-        </div>
-        <div class="review-card">
-            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
-                    class="fas fa-star"></i><i class="fas fa-star"></i></div>
-            <p class="review-text">"Booking is easy and they are always on time. Respect."</p>
-            <div class="reviewer">
-                <div class="reviewer-avatar">BJ</div>
-                <span>Brian J.</span>
-            </div>
-        </div>
-    </div>
-    </div>
     </section>
 
     <!-- WhatsApp Float -->
@@ -123,12 +229,12 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <div class="footer-divider"></div><footer>
+    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
                     <a href="index.html" style="display: inline-block;">
-                        <img src="images/logo.png" alt="Footer Logo" style="height: 100px; margin-bottom: 20px;">
+                        <img src="images/logo.png" alt="Footer Logo" style="height: 40px; margin-bottom: 20px;">
                     </a>
                     <p style="color: var(--text-muted);">Luxury grooming for the modern executive.</p>
                 </div>
@@ -137,10 +243,10 @@
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="barbershop.html">Barbershop</a></li>
-                        <li><a href="massage.html">Body Massage</a></li>
-                        <li><a href="nails.html">Manicure & Pedicure</a></li>
-                        <li><a href="facials.html">Facials</a></li>
-                        <li><a href="contact.html">Visit Us</a></li>
+                        <li><a href="salon.html">Salon</a></li>
+                        <li><a href="nails.html">Nails Spa</a></li>
+                        <li><a href="eyebrows.html">Eyebrows</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -153,15 +259,13 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; <span id="current-year"></span> The Para. All rights reserved. <br>
+                <p>&copy; <span id="current-year"></span> Joel's Executive Salon & Barbers. All rights reserved. <br>
                     Powered by <a href="https://essenceautomations.com/" target="_blank">Essence Automations</a></p>
             </div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
-    </body>
+</body>
 
-    </html>
-
-
+</html>
