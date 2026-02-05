@@ -190,19 +190,17 @@ header {
 }
 
 .hero-pattern {
-    background-color: #111;
-    /* Slightly lighter base */
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
-        /* Much lighter overlay */
-        repeating-linear-gradient(45deg,
-            rgba(255, 255, 255, 0.05) 0px,
-            /* Increased visibility */
-            rgba(255, 255, 255, 0.05) 1px,
+    background-color: #1a1a1a;
+    /* Visible dark grey base */
+    background-image: repeating-linear-gradient(45deg,
+            rgba(227, 212, 107, 0.1) 0px,
+            /* Theme Gold, higher opacity */
+            rgba(227, 212, 107, 0.1) 1px,
             transparent 1px,
-            transparent 3px);
-    background-size: 100% 100%;
-    background-position: center;
+            transparent 10px
+            /* Wider spacing for clarity */
+        );
+    background-size: auto;
 }
 
 .hero-content h1 {
