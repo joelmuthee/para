@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+    <defs>
+        <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#F5D061;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#C5A059;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#E6C200;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    
+    <!-- Stylized Border/Underline -->
+    <path d="M20 85 L380 85" stroke="url(#gold)" stroke-width="2"/>
+    <rect x="180" y="82" width="40" height="6" fill="url(#gold)"/>
+
+    <!-- Main Text -->
+    <text x="200" y="65" font-family="'Cinzel', serif" font-size="60" text-anchor="middle" fill="url(#gold)" letter-spacing="8" font-weight="bold">THE PARA</text>
+    
+    <!-- Tagline -->
+    <text x="200" y="95" font-family="'Roboto', sans-serif" font-size="10" text-anchor="middle" fill="#C5A059" letter-spacing="4">EXECUTIVE GROOMING</text>
+</svg>
