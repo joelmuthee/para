@@ -519,6 +519,12 @@ footer {
     display: block;
 }
 
+.footer-links li a[href^="tel:"] {
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.3);
+    text-underline-offset: 4px;
+}
+
 .footer-links li a:hover {
     color: var(--primary);
     transform: translateX(5px);
