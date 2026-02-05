@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 
-source_path = r"C:/Users/Joel/.gemini/antigravity/brain/92cc137b-f77f-4979-9a69-7e989cfc30f3/uploaded_image_1767950449990.jpg"
+source_path = r"c:/Users/Joel/OneDrive/Documents/Anti Gravity/The Para/Para/AI images/logo.png"
 target_path = r"c:/Users/Joel/OneDrive/Documents/Anti Gravity/The Para/Para/images/favicon.png"
 
 try:
