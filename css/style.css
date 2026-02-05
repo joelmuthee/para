@@ -808,8 +808,8 @@ iframe {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(8px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -825,20 +825,29 @@ iframe {
 }
 
 .modal-content {
-    background: #1a1a1a;
-    background: rgba(30, 30, 30, 0.95);
-    backdrop-filter: blur(15px);
+    background: linear-gradient(145deg, rgba(30, 30, 30, 0.98), rgba(15, 15, 15, 0.98));
+    border: 1px solid rgba(227, 212, 107, 0.15);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
     padding: 40px;
-    border-radius: 16px;
-    border: 1px solid rgba(212, 175, 55, 0.2);
-    /* Subtle Gold Border */
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
     max-width: 450px;
     width: 90%;
     text-align: center;
     transform: translateY(20px);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
+    overflow: hidden;
+}
+
+/* Subtle Gold Glow on Top */
+.modal-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
 }
 
 .modal-overlay.active .modal-content {
@@ -848,24 +857,27 @@ iframe {
 .modal-close {
     position: absolute;
     top: 15px;
-    right: 15px;
+    right: 20px;
     background: transparent;
     border: none;
     color: var(--text-muted);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     cursor: pointer;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
+    z-index: 2;
 }
 
 .modal-close:hover {
-    color: var(--white);
+    color: var(--primary);
+    transform: rotate(90deg);
 }
 
 .modal-title {
     font-size: 1.8rem;
     color: var(--white);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-family: var(--font-heading);
+    letter-spacing: 0.5px;
 }
 
 .branch-btn {
@@ -873,19 +885,38 @@ iframe {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 15px 20px;
+    padding: 18px 25px;
     margin-bottom: 15px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
     text-align: left;
+    position: relative;
+    overflow: hidden;
+}
+
+.branch-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--primary);
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
 }
 
 .branch-btn:hover {
-    background: rgba(227, 212, 107, 0.1);
-    border-color: var(--primary);
+    background: rgba(227, 212, 107, 0.05);
+    border-color: rgba(227, 212, 107, 0.3);
+    transform: translateX(5px);
+}
+
+.branch-btn:hover::before {
+    transform: scaleY(1);
 }
 
 .branch-info h4 {
