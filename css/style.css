@@ -77,6 +77,10 @@ img {
 }
 
 /* Utilities */
+.mobile-only {
+    display: none;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -183,6 +187,15 @@ header {
     text-align: center;
     position: relative;
     padding-top: 80px;
+}
+
+.hero-pattern {
+    background-color: #0a0a0a;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        radial-gradient(rgba(227, 212, 107, 0.15) 1px, transparent 1px);
+    background-size: 100% 100%, 30px 30px;
+    background-position: center;
 }
 
 .hero-content h1 {
@@ -443,11 +456,26 @@ header {
     color: var(--dark-bg);
 }
 
+.footer-divider {
+    height: 1px;
+    /* Sleek line */
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
+    width: 100%;
+    margin: 0;
+    border: none;
+    opacity: 1;
+    box-shadow: 0 -2px 10px rgba(227, 212, 107, 0.3);
+    /* Upward glow */
+    position: relative;
+    z-index: 10;
+}
+
 /* Footer */
 footer {
     background: #000;
     padding: 60px 0 20px;
-    border-top: 1px solid var(--border-color);
+    border-top: none;
+    /* Replaced by divider */
 }
 
 .footer-grid {
@@ -595,6 +623,14 @@ iframe {
 
 /* Mobile */
 @media (max-width: 768px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    .mobile-only {
+        display: block !important;
+    }
+
     .nav-links {
         position: fixed;
         top: 70px;
