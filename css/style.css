@@ -664,6 +664,14 @@ iframe {
         font-size: 2rem;
     }
 
+    /* Move hero content up: clear header (approx 80px) and start content */
+    .hero {
+        align-items: flex-start;
+        padding-top: 130px;
+        height: 100vh;
+        /* Ensure full height coverage */
+    }
+
     .hero-content p {
         font-size: 1rem;
     }
