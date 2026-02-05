@@ -1,7 +1,7 @@
 :root {
-    --primary: #D4AF37;
-    /* Metallic Gold */
-    --primary-hover: #E5C158;
+    --primary: #e3d46b;
+    /* Theme Yellow */
+    --primary-hover: #ebd976;
     --dark-bg: #0A0A0A;
     /* Deeper Rich Black */
     --dark-surface: rgba(255, 255, 255, 0.03);
