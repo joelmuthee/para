@@ -462,6 +462,13 @@ footer {
     margin-bottom: 20px;
 }
 
+.footer-logo-center {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer-info p,
 .footer-links li a {
     color: var(--text-muted);
