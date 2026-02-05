@@ -340,6 +340,15 @@ header {
 
 
 
+/* About Image Fix */
+.about-img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    image-orientation: from-image;
+}
+
 .service-img {
     height: 250px;
     overflow: hidden;
