@@ -191,16 +191,11 @@ header {
 
 .hero-pattern {
     background-color: #1a1a1a;
-    /* Visible dark grey base */
-    background-image: repeating-linear-gradient(45deg,
-            rgba(227, 212, 107, 0.1) 0px,
-            /* Theme Gold, higher opacity */
-            rgba(227, 212, 107, 0.1) 1px,
-            transparent 1px,
-            transparent 10px
-            /* Wider spacing for clarity */
-        );
-    background-size: auto;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../images/texture-bg.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-content h1 {
