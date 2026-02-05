@@ -192,8 +192,8 @@ header {
 .hero-pattern {
     background-color: #1a1a1a !important;
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)),
-        url('../images/texture-bg.jpg') !important;
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('../Real images/Hero background.avif') !important;
     background-size: cover !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
