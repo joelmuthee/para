@@ -149,6 +149,8 @@ header {
 
 .logo img {
     height: 50px;
+    mix-blend-mode: lighten;
+    /* Removes black background */
 }
 
 .nav-links {
@@ -539,6 +541,10 @@ footer {
 iframe {
     /* Removed filters as requested */
     border: 1px solid var(--border-color) !important;
+}
+
+.footer-logo-center img {
+    mix-blend-mode: lighten;
 }
 
 /* WhatsApp Widget */
