@@ -321,9 +321,7 @@ header {
     box-shadow: var(--glass-shadow);
 }
 
-.service-card:hover {
-    /* transform: translateY(-10px); Removed as requested */
-}
+
 
 .service-img {
     height: 250px;
@@ -535,12 +533,12 @@ iframe {
     height: 60px;
     bottom: 40px;
     right: 40px;
-    background-color: #25d366;
-    color: #FFF;
+    background-color: var(--primary);
+    color: var(--dark-bg);
     border-radius: 50px;
     text-align: center;
     font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -560,10 +558,9 @@ iframe {
 }
 
 .whatsapp-float:hover {
-    background-color: #128C7E;
-    background-color: #128C7E;
+    background-color: var(--primary-hover);
     transform: translateY(-5px);
-    color: white;
+    color: var(--dark-bg);
 }
 
 /* Why Choose Us Features */
@@ -929,4 +926,13 @@ iframe {
     color: var(--text-muted);
     font-size: 1rem;
     line-height: 1.6;
+}
+
+/* Page Background Texture */
+body.page-texture {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)), url('../images/texture-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
