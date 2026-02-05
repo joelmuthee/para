@@ -190,12 +190,13 @@ header {
 }
 
 .hero-pattern {
-    background-color: #1a1a1a;
+    background-color: #1a1a1a !important;
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('../images/texture-bg.jpg');
-    background-size: cover;
-    background-position: center;
+        linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)),
+        url('../images/texture-bg.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
 .hero-content h1 {
@@ -926,13 +927,4 @@ iframe {
     color: var(--text-muted);
     font-size: 1rem;
     line-height: 1.6;
-}
-
-/* Page Background Texture */
-body.page-texture {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)), url('../images/texture-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
 }
