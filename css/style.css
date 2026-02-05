@@ -190,17 +190,21 @@ header {
 }
 
 .hero-pattern {
-    background-color: #0a0a0a;
+    background-color: #050505;
     background-image:
-        radial-gradient(rgba(227, 212, 107, 0.25) 2px, transparent 2px),
-        linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
-    background-size: 30px 30px, 100% 100%;
+        linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95)),
+        repeating-linear-gradient(45deg,
+            rgba(255, 255, 255, 0.03) 0px,
+            rgba(255, 255, 255, 0.03) 1px,
+            transparent 1px,
+            transparent 20px);
+    background-size: 100% 100%;
     background-position: center;
 }
 
 .hero-content h1 {
     font-size: 4rem;
-    color: var(--white);
+    color: var(--primary);
     margin-bottom: 20px;
     line-height: 1.1;
     opacity: 0;
