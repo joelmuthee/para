@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.service-card, .section-title, .review-card, .about-content, .about-img, .feature-card, .footer-col, .footer-grid > div, .contact-grid > div, .about-grid > div').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(40px)';
-        el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+        el.style.transition = 'opacity 0.4s ease-out, transform 0.4s ease-out';
         observer.observe(el);
     });
 
