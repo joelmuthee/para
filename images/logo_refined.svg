@@ -5,7 +5,7 @@
             <stop offset="40%" style="stop-color:#E6C200;stop-opacity:1" />
             <stop offset="100%" style="stop-color:#C5A059;stop-opacity:1" />
         </linearGradient>
-        <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
             <feDropShadow dx="1" dy="1" stdDeviation="1" flood-color="black" flood-opacity="0.8"/>
         </filter>
     </defs>
@@ -14,30 +14,38 @@
     <g transform="translate(45, 40)">
         <!-- Outer Ring -->
         <circle cx="0" cy="0" r="35" fill="none" stroke="url(#gold-grad)" stroke-width="2" />
-        <circle cx="0" cy="0" r="30" fill="none" stroke="url(#gold-grad)" stroke-width="0.5" opacity="0.5"/>
-
-        <!-- Tools: Scissors & Clipper (Stylized) -->
-        <g transform="scale(0.8)">
-            <!-- Scissors (Diagonal) -->
-            <g transform="rotate(-45)">
-                 <path d="M-5 25 L-5 -25 M5 25 L5 -25" stroke="url(#gold-grad)" stroke-width="4" stroke-linecap="round"/>
-                 <circle cx="-5" cy="25" r="8" stroke="url(#gold-grad)" stroke-width="2" fill="none"/>
-                 <circle cx="5" cy="25" r="8" stroke="url(#gold-grad)" stroke-width="2" fill="none"/>
-                 <!-- Black Outline for definition -->
-                 <circle cx="-5" cy="25" r="8" stroke="black" stroke-width="0.5" fill="none"/>
-                 <circle cx="5" cy="25" r="8" stroke="black" stroke-width="0.5" fill="none"/>
+        
+        <!-- Tools Crossed -->
+        <g transform="scale(0.85)">
+            <!-- Scissors (Diagonal \ ) -->
+            <g transform="rotate(25)">
+                <!-- Handle Loops -->
+                <circle cx="-10" cy="25" r="7" stroke="url(#gold-grad)" stroke-width="2.5" fill="none"/>
+                <circle cx="10" cy="25" r="7" stroke="url(#gold-grad)" stroke-width="2.5" fill="none"/>
+                <!-- Blades -->
+                <path d="M-8 20 L0 -28 L8 20" fill="url(#gold-grad)" stroke="black" stroke-width="0.5"/>
+                <!-- Pivot screw -->
+                <circle cx="0" cy="0" r="1.5" fill="black"/>
             </g>
-            
-            <!-- Clipper (Overlaid) -->
-            <rect x="-10" y="-20" width="20" height="30" rx="3" fill="url(#gold-grad)" stroke="black" stroke-width="1" />
-            <line x1="-10" y1="-8" x2="10" y2="-8" stroke="black" stroke-width="1"/>
+
+            <!-- Electric Shaver/Clipper (Diagonal / ) -->
+            <g transform="rotate(-25)">
+                <!-- Main Body -->
+                <rect x="-8" y="-22" width="16" height="40" rx="3" fill="url(#gold-grad)" stroke="black" stroke-width="0.5" />
+                <!-- Blade Head -->
+                <path d="M-8 -22 L-10 -28 L10 -28 L8 -22 Z" fill="#F5D061" stroke="black" stroke-width="0.5" />
+                <!-- Detail Lines on Body -->
+                <line x1="-5" y1="-15" x2="5" y2="-15" stroke="black" stroke-width="0.5" opacity="0.6"/>
+                <line x1="-5" y1="-12" x2="5" y2="-12" stroke="black" stroke-width="0.5" opacity="0.6"/>
+                <!-- Power Switch -->
+                <rect x="-2" y="-5" width="4" height="8" rx="1" fill="black" opacity="0.8"/>
+            </g>
         </g>
     </g>
 
     <!-- Group: Text (Right) -->
-    <!-- Vertically centered -->
     <g transform="translate(100, 52)">
-        <text font-family="'Cinzel', serif" font-size="38" font-weight="700" fill="url(#gold-grad)" letter-spacing="3" filter="url(#dropShadow)">THE PARA</text>
+        <text font-family="'Cinzel', serif" font-size="38" font-weight="700" fill="url(#gold-grad)" letter-spacing="3" filter="url(#shadow)">THE PARA</text>
         <text x="2" y="18" font-family="'Inter', sans-serif" font-size="9" fill="#C5A059" letter-spacing="4" text-transform="uppercase" opacity="0.9">Premium Barbershop</text>
     </g>
 </svg>
