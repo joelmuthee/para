@@ -1,0 +1,24 @@
+/* Fix for Barbershop Image */
+.barber-rotate-fix {
+    transform: rotate(-90deg) scale(1.4) translateX(-65px);
+    object-position: 100% 50%;
+    /* Shifts view to show head (Right->Top) and client (Left->Bottom) */
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Maintain rotation on hover, just scale up slightly more */
+.about-img:hover .barber-rotate-fix {
+    transform: rotate(-90deg) scale(1.45) translateX(-65px) !important;
+}
+
+@media (max-width: 768px) {
+    .barber-rotate-fix {
+        transform: rotate(-90deg) scale(1.4) translateX(-40px);
+        object-position: 100% 50%;
+        /* optimized for mobile portrait */
+    }
+
+    .about-img:hover .barber-rotate-fix {
+        transform: rotate(-90deg) scale(1.45) translateX(-40px) !important;
+    }
+}
