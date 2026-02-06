@@ -35,15 +35,19 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 entry.target.style.opacity = '1';
                 entry.target.style.transform = 'translateY(0)';
-                observer.unobserve(entry.target); // Stop observing once revealed
+            } else {
+                // Determine if element is above or below viewport to decide reset behavior? 
+                // Simple reset allowing re-animation from both directions
+                entry.target.style.opacity = '0';
+                entry.target.style.transform = 'translateY(40px)';
             }
         });
-    }, { threshold: 0.1, rootMargin: '0px 0px 0px 0px' });
+    }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' }); // Adjusted threshold and margin for better trigger points
 
-    document.querySelectorAll('.service-card, .section-title, .review-card, .about-content, .about-img, .feature-card, .footer-col, .footer-grid > div, .contact-grid > div, .about-grid > div').forEach(el => {
+    document.querySelectorAll('.service-card, .section-title, .review-card, .about-content, .about-img, .feature-card, .footer-col, .footer-grid > div, .contact-grid > div, .about-grid > div, .hero-content h1, .hero-content p, .hero-content .btn').forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(40px)';
-        el.style.transition = 'opacity 0.4s ease-out, transform 0.4s ease-out';
+        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out'; // Slightly smoother
         observer.observe(el);
     });
 
