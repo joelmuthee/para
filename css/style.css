@@ -721,7 +721,7 @@ iframe {
     /* Move hero content up: clear header (approx 80px) and start content */
     .hero {
         align-items: flex-start;
-        padding-top: 130px;
+        padding-top: 180px;
         height: 100vh;
         /* Ensure full height coverage */
     }
