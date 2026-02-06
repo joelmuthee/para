@@ -1,6 +1,6 @@
 /* Specific position fix for the Barbershop image to show both heads */
 .barber-position-fix {
-    object-position: 50% 35% !important;
+    object-position: 50% 10% !important;
 }
 
 /* Fix for Rotated Images (Executive haircut.JPG) */
@@ -20,7 +20,7 @@
 
 @media (max-width: 768px) {
     .barber-position-fix {
-        object-position: 50% 35% !important;
+        object-position: 50% 10% !important;
     }
 
     .barber-rotate-fix {
